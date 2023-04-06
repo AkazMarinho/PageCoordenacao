@@ -1,0 +1,113 @@
+.container{
+    height: 350px;
+    width: 70%;
+    background-image: radial-gradient(farthest-corner at 220px 220px ,#DCFFC1 -50%,#E54B4B 90%);
+    border-radius: 13px;
+    box-shadow: -3px 4px 4px #00000040;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil{
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #783D8D;
+    background-color: #dfdfdf;
+    box-shadow: -10px 10px 19px #00000040;
+}
+
+.Titulo, .Conteudo{
+    margin: 0;
+}
+
+.Titulo{
+    width: 80%;
+    font-size: 25px;
+    height: max-content;
+    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.Conteudo{
+    display: flex;
+    font-size: 20px;
+    width: 80%;
+    height: 190px;
+    margin-bottom: 20px;
+}
+
+.link{
+    width: 300px;
+    height: 33px;
+    margin: 0 auto;
+    background-color: #4497C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 6px;
+    box-shadow: -4px 4px 19px #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.link:hover{
+    
+    background-color: #3c8ebe;
+}
+
+@media (max-width: 1000px){
+    .Titulo{
+        width: 80%;
+        font-size: 22px;
+    }
+
+    .Conteudo{
+        font-size: 18px;
+        width: 74%;
+    }
+}
+
+@media (max-width: 800px){
+    .Titulo{
+        width: 60%;
+        font-size: 20px;
+    }
+
+    .Conteudo{
+        width: 74%;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        height: max-content;
+    }
+    .perfil{
+        position: absolute;
+        right: -50px;
+        top: -50px;
+        width: 140px;
+        height: 140px;
+    }
+    .Titulo{
+        width: 60%;
+        font-size: 20px;
+    }
+
+    .Conteudo{
+        width: 74%;
+    }
+
+    .link{
+        width: 70%;
+    }
+
+
+}
